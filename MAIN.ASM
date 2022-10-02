@@ -152,7 +152,7 @@ DrawSquare PROC NEAR ; push color, coordy, coordx and side length in that order
 
     mov ah, 0ch ; write pixel call
     mov al, [bp + 10] ; color
-    mov bh, active_page ; page number (no idea what this is, i'll look it up later)
+    mov bh, active_page ; page number (no idea what this is, i'll look it up later) UPDATE: Now I know what this is.
     
     mov dx, [bp + 8]
 
